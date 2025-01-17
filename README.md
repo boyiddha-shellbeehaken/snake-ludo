@@ -1,4 +1,4 @@
-# Double Player Snake - Ladder Game
+# Double Player Snake - Ladder Game (using:: React.js)
 
 ## Available Output ScreenShot
 <hr>
