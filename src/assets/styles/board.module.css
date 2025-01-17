@@ -1,0 +1,42 @@
+.flexContainer {
+  display: flex;
+  height: 90vh;
+  background-color: #d5d3d3;
+}
+
+.ludoBoard {
+  background-color: #9d9c9c;
+  color: white;
+  width: 50%;
+  margin: 40px 10px 75px 200px;
+  text-align: center;
+  display: flex; /*Flexbox for centering */
+  justify-content: center; /* Horizontal centering */
+  align-items: center; /* Vertical centering */
+}
+
+.scoreBoard {
+  background-color: #f3da99;
+  color: white;
+  width: 30%;
+  height: 52%;
+  margin: 20px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+  border-radius: 35px;
+}
+
+.initialPosition {
+  position: absolute;
+  height: 100px;
+  width: 200px;
+  background-color: yellow;
+  margin-top: 20px;
+}
+
+.image {
+  width: 60px;
+  height: 52px;
+  padding: 18px;
+}

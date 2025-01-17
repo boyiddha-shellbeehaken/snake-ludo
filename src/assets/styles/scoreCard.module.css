@@ -1,0 +1,32 @@
+.image {
+  width: 50px;
+  height: 40px;
+}
+.pl1 {
+  color: red;
+  font-weight: bold;
+  font-size: 35px;
+}
+
+.pl2 {
+  color: blue;
+  font-weight: bold;
+  font-size: 35px;
+}
+.blinking {
+  animation: blinkingAnimation 0.8s infinite;
+}
+
+@keyframes blinkingAnimation {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.4;
+    scale: 2;
+    transform: rotateY(360deg);
+  }
+  100% {
+    opacity: 1;
+  }
+}

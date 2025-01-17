@@ -1,0 +1,61 @@
+.snakeLadderTable {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  height: 90%;
+}
+
+.row {
+  display: flex;
+  flex: 1; /* Each row takes equal space */
+}
+
+.cell {
+  flex: 1; /* Each cell takes equal space within a row */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #ddd;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.cellImage {
+  width: 50px;
+  height: 40px;
+  position: relative;
+  z-index: 100;
+  display: flex;
+} /* Alternate colors based on row index */
+.row:nth-child(odd) .cell:nth-child(odd) {
+  background-color: #3fe245; /* Green for odd cells in odd rows */
+}
+
+.row:nth-child(odd) .cell:nth-child(even) {
+  background-color: #e9d630; /* Yellow for even cells in odd rows */
+}
+
+.row:nth-child(even) .cell:nth-child(odd) {
+  background-color: #c2b432; /* Yellow for odd cells in even rows */
+}
+
+.row:nth-child(even) .cell:nth-child(even) {
+  background-color: #2e8131; /* Green for even cells in even rows */
+}
+
+.blink {
+  animation: blinkAnimation 0.8s infinite;
+}
+@keyframes blinkAnimation {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.4;
+    transform: scale(2.2);
+    transform: rotateY(180deg);
+  }
+  100% {
+    opacity: 1;
+  }
+}
